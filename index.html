@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baskin Robbin</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-between;
+      margin: auto;
+      padding: 50px;
+      padding-top: 60px;
+      height: 100px;
+      width: 100%;
+      position: fixed;
+      z-index: 1000;
+      background-color: white;
+    }
+
+    .menu-icon {
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .menu-icon img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .menu-icon:hover {
+      transform: scale(1.1);
+    }
+
+    .main-logo img {
+      width: 250px;
+      height: 45px;
+    }
+
+    .navbar button {
+      height: 40px;
+      width: 140px;
+      border-radius: 10px;
+      border: none;
+      background-color: rgb(242, 89, 148);
+      color: white;
+      font-weight: bolder;
+      font-size: 16px;
+      font-family: sans-serif;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .navbar button:hover {
+      transform: scale(1.1);
+    }
+
+    /* section1 */
+    .section1 .img1 {
+      width: 100%;
+      height: 400%;
+      margin-top: 90px;
+    }
+
+    .section1 .img2 {
+      display: none;
+    }
+
+    /* section 2 */
+    .section2 span {
+      color: rgb(242, 89, 148);
+
+    }
+
+    .section2 {
+      
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bolder;
+      margin-top: 50px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      /* height: 90vh; */
+    }
+
+    .text1 {
+      padding: 50px;
+      font-size: 38px;
+          }
+
+    #container1 {
+      display: grid;
+      place-items: center;
+      gap: 20px;
+      /* height: 50vh; */
+    }
+
+    .card {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      place-items: center;
+      margin: auto;
+      text-align: center;
+      font-size: 20px;
+      font-family: sans-serif;
+    }
+    h5{
+    font-weight: lighter;
+    font-size: 18px;
+    }
+    .order-btn{
+      width: 130px;
+      height: 35px;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      background-color: rgb(240, 75, 144);
+      border: none;
+      border-radius: 3px;
+      margin: 50px;
+    }
+
+    @media(min-width:768px) and (max-width:1200px) {}
+
+    @media(max-width:426px) and (min-width:200px) {
+
+      .section1 .img1 {
+        display: none;
+      }
+
+      .section1 .img2 {
+        display: unset;
+        width: 220vw;
+      }
+      
+
+    }
+  </style>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="menu-icon">
+      <img src="https://cdn.shopify.com/s/files/1/0624/7065/2146/files/Burger_Menu.png?v=1681390129" alt="Menu Icon">
+    </div>
+    <div class="main-logo">
+      <img src="https://cdn.shopify.com/s/files/1/0624/7065/2146/files/Main_Logo.png?v=1681288046" alt="Main logo">
+    </div>
+    <div>
+      <button>
+        ORDER NOW
+      </button>
+    </div>
+  </nav>
+
+  <!-- main content -->
+  <section class="section1">
+
+    <img class="img1"
+      src="https://baskinrobbinsindia.com/cdn/shop/files/BR_Website_Banners_-_2-03_1024x.jpg?v=1731324129"
+      alt="Croissant cone Sundaes">
+    <img class="img2" src="https://baskinrobbinsindia.com/cdn/shop/files/Mobile_2-06_414x.jpg?v=1731324146"
+      alt="Croissant cone Sundaes">
+
+  </section>
+
+  <section class="section2">
+    <div class="text1"><span>What's</span> New?</div>
+    <div id="container1">
+      <div class="card">
+        <div>
+          <img src="https://baskinrobbinsindia.com/cdn/shop/files/414_x_414_-_Croissant_sundae_2_414x.jpg?v=1731401021"
+            alt="" viewBox="0 0 24 24" style="fill: #fc0303;">
+            <h1>Croissant Cone</h1>
+            <h5>Sundae</h5>
+            <button class="order-btn">ORDER NOW</button>
+        </div>
+        <div>
+          <img src="https://baskinrobbinsindia.com/cdn/shop/files/414_x_414_-_Pista_Kulfi_Sundae_414x.jpg?v=1731401272"
+            alt="">
+            <h1>Irani Pista Kulfi</h1>
+            <h5>Sundae</h5>
+            <button class="order-btn">ORDER NOW</button>
+        </div>
+        <div>
+          <img src="https://baskinrobbinsindia.com/cdn/shop/files/414_x_414_-_Rabri_Jalebi_414x.jpg?v=1731401271"
+            alt="">
+            <h1>Rabri Jalebi</h1>
+            <h5>Ice Cream</h5>
+            <button class="order-btn">ORDER NOW</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div>
+      <!-- img https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU3WqX49ZrgPbsgH5dnosgwYmOzeilhhKLHg&s -->
+      <img
+        src="https://baskinrobbinsindia.com/cdn/shop/files/Arctic-IC-Pizza_c82eef5c-e769-485e-a97b-906ff0fe1ab7_414x.png?v=1698414157"
+        alt="">
+      <img
+        src="https://baskinrobbinsindia.com/cdn/shop/files/Cakes_08fe6ba3-ff60-4e01-abda-db35cfca8171_414x.png?v=1698414156"
+        alt="">
+      <img src="https://baskinrobbinsindia.com/cdn/shop/files/Snickers-Caramel-Sundae_414x.png?v=1698414156" alt="">
+    </div>
+  </section>
+
+  <section>
+    <div>
+      <img src="https://baskinrobbinsindia.com/cdn/shop/files/Website-BlackCurrant_414x.png?v=1722322356" alt="">
+      <img src="https://baskinrobbinsindia.com/cdn/shop/files/Homepage_product_r1-01_414x.png?v=1681714415" alt="">
+      <img src="https://baskinrobbinsindia.com/cdn/shop/files/CottonCandy--450ml---1043sq_414x.png?v=1698056994" alt="">
+    </div>
+  </section>
+
+  <section>
+    <div>
+      <img
+        src="https://baskinrobbinsindia.com/cdn/shop/articles/mount-everst-sundae-cropped-1653647615_04bae524-fa77-495a-bb54-8a65aa3b0ed1_x260_crop_center.jpg?v=1659946040"
+        alt="">
+      <img
+        src="https://baskinrobbinsindia.com/cdn/shop/articles/Hersheys-Chocolate-Overload-min_x260_crop_center.webp?v=1683525528"
+        alt="">
+    </div>
+  </section>
+
+  <!-- footer -->
+  <section>
+    <div>
+      <!-- <img src="https://baskinrobbinsindia.com/cdn/shop/t/25/assets/Footer_BG_New.png?v=35596627932696561531681920291" alt=""> -->
+    </div>
+  </section>
+</body>
+
+</html>
